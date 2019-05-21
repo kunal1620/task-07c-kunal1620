@@ -1,0 +1,42 @@
+[
+    {
+        "actor" : "Robert Downey Jr.",
+        "character" : "Ironman",
+        "age" : 54
+    },
+    {
+        "actor" : "Scarlett Johansson",
+        "character" : "Black Widow",
+        "age" : 34
+    },
+    {
+        "actor" : "Chris Evans",
+        "character" : "Captain America",
+        "age" : 37
+    },
+    {
+        "actor" : "Chris Hemsworth",
+        "character" : "Thor",
+        "age" : 35
+    },
+    {
+        "actor" : "Jeremy Renner",
+        "character" : "Hawkeye",
+        "age" : 48
+    },
+    {
+        "actor" : "Mark Ruffalo",
+        "character" : "Hulk",
+        "age" : 51
+    },
+    {
+        "actor" : "Elizabeth Olsen",
+        "character" : "Scarlet Witch",
+        "age" : 30
+    },
+    {
+        "actor" : "Tom Holland",
+        "character" : "Spiderman",
+        "age" : 22
+    }
+]
