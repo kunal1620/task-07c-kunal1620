@@ -76,7 +76,10 @@ class ListyTableViewController: UITableViewController, UISearchBarDelegate, List
         // Update the list with new member
         if(DataManager.saveData(list: mainList)) {
             listItems = mainList
-            tableView.reloadData()
+            
+            // Add new cell at the bottom of the table
+            let indexPath = IndexPath(row: tableView.numberOfRows(inSection: 0), section: 0)
+            tableView.insertRows(at: [indexPath], with: .automatic)
         }
     }
     
