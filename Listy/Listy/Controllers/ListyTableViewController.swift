@@ -64,8 +64,7 @@ class ListyTableViewController: UITableViewController, UISearchBarDelegate, List
     /// Loads the data into the main list and display list
     func loadData() {
         mainList = DataManager.loadData()
-        listItems = mainList
-        tableView.reloadData();
+        sortByCharacter()   //Sort the list by character (Also assigns the data to the listItems array)
     }
 
     /// Save data to the file
@@ -110,7 +109,7 @@ class ListyTableViewController: UITableViewController, UISearchBarDelegate, List
     }
     
     
-    /// Sorts the list by the actor property
+    /// Sorts the list by the age property
     /// Sorts the mainList first and re-assigns it to
     /// listItems to prevent issues when deleting
     func sortByAge() {
@@ -217,16 +216,5 @@ class ListyTableViewController: UITableViewController, UISearchBarDelegate, List
         })
         tableView.reloadData()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
